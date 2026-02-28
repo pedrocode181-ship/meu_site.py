@@ -24,7 +24,7 @@ senha_s = st.text_input('Digite sua senha: ', type='password')
 
 if senha_s in ['1234', '4321', 'pedro']:
     st.button('Entrar')
-    st.page_link('pages/principal.py',
+    st.page_link('principal.py',
                  label='Entrar',
                  icon='✔')
     st.success('Ok, click no botão acima para avançar.')
@@ -70,4 +70,5 @@ if nome_usuario and senha_s:
     )
 
     session.add(usuario1)
+
     session.commit()
